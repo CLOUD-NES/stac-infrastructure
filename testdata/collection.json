@@ -1,0 +1,41 @@
+{
+  "type": "Collection",
+  "id": "AHN5",
+  "stac_version": "1.1.0",
+  "description": "Actueel Hoogtebestand Nederland (AHN) 5 - https://www.ahn.nl",
+  "links": [],
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          3.23129033,
+          50.71299866,
+          7.37455483,
+          53.55086522
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2023-01-01T00:00:00Z",
+          "2024-12-31T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "CC-BY-4.0",
+  "providers": [
+    {
+      "name": "PDOK",
+      "description": "Publieke Dienstverlening Op de Kaart",
+      "roles": [
+        "licensor",
+        "producer",
+        "processor",
+        "host"
+      ],
+      "url": "https://www.pdok.nl"
+    }
+  ]
+}

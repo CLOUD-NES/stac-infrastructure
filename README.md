@@ -18,29 +18,23 @@ cp .env.template .env
 # edit the .env file
 ```
 
-Start a test STAC API instance and ingest a test dataset with:
+Start a test STAC API instance and ingest a test dataset, using the [transaction extension](https://github.com/stac-api-extensions/transaction):
 
 ```shell
-docker compose run --rm ingest-test-data
+docker compose up ingest-test-data
 ```
 
 The STAC API should be running at http://localhost:8082/ (explore via [the STAC Browser](https://radiantearth.github.io/stac-browser) at [this link](https://radiantearth.github.io/stac-browser/#/external/http:/localhost:8082/)).
 
 
-Test the production STAC API deployment, including the nginx reverse proxy:
+Test the production STAC API deployment, including the nginx reverse proxy, and ingest a test dataset using [`pypgstac`](https://stac-utils.github.io/pgstac/pypgstac/), which bypasses the FastAPI interface and connects directly to the database:
 
 ```shell
-docker compose up nginx
+docker compose up nginx ingest-data
 ```
 
 The STAC API should be running at http://localhost/stac/v1 (explore via [the STAC Browser](https://radiantearth.github.io/stac-browser) at [this link](https://radiantearth.github.io/stac-browser/#/external/http:/localhost/stac/v1/)).
 
-
-Once the STAC API is running, ingest all the records as:
-
-```shell
-docker compose run --rm ingest-data
-```
 
 Stop all services, cleaning up stopped containers:
 

@@ -1,15 +1,15 @@
-# CLOUD-NES STAC Catalog - Infrastructure
+# CLOUD-NES STAC API - Infrastructure
 
 > [!WARNING]
 > This repository is work in progress, its content could change at any time.
 
-This repository hosts material related to the deployment of a STAC API for the datasets hosted on SURF as part of the CLOUD-NES project.
+This repository hosts material related to the deployment of the STAC API that will index the datasets hosted on SURF as part of the [CLOUD-NES project](https://tdcc.nl/projects/tdcc-nes-projects/cloud-nes-facilitating-cloud-native-data-access-and-processing-for-nes/).
 
-The STAC API is run by a FastAPI application based on the [stac-fastapi-pgstac](https://github.com/stac-utils/stac-fastapi-pgstac) implementation.
+The STAC API is based on the [stac-fastapi-pgstac](https://github.com/stac-utils/stac-fastapi-pgstac) implementation.
 
 ## Development
 
-### Running the STAC API locally
+### Testing the STAC API locally
 
 Generate the `.env` configuration file from the given template:
 

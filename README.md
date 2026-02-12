@@ -45,5 +45,5 @@ The STAC API is based on the [stac-fastapi-pgstac](https://github.com/stac-utils
 ## Credits
 
 * [stac-fastapi-pgstac](https://github.com/stac-utils/stac-fastapi-pgstac).
-* The [`wait-for-it.sh`] script is taken from [this repository](https://github.com/vishnubob/wait-for-it).
+* The [`wait-for-it.sh`](./scripts/wait-for-it.sh) script is taken from [this repository](https://github.com/vishnubob/wait-for-it).
 * Test data is derived from [the AHN project](https://www.ahn.nl/).

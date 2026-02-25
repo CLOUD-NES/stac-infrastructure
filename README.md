@@ -43,7 +43,7 @@ In order to create the catalog item that allows one to deploy the CLOUD-NES STAC
   * "Component script type": Ansible PlayBook
   * "Repository URL": https://github.com/CLOUD-NES/stac-infrastructure.git
   * "Path": research-cloud-component.yml
-* Fill in the required component name and description, then click "CONTINUE".
+* Fill in the required component name (e.g. `CLOUD-NES STAC`) and description, then click "CONTINUE".
 * Add two component parameters with the following details, then click "CONTINUE":
   * "Parameter key": `postgres_user`, "Source type": "Workspace", "Initial value": `username`, and tick only the "Overwritable" box.
   * "Parameter key": `postgres_password`, "Source type": "Workspace", "Initial value": `password`, and tick only the "Overwritable" box.
@@ -53,7 +53,16 @@ In order to create the **catalog item** based on the just-created component:
 
 * On the [SRC Portal](https://portal.live.surfresearchcloud.nl/), select the "Development" tab from the top menu, then select the "Catalog Items" tab.
 * Search for the "Docker Environment" catalog item, select it and click "Clone". A wizard will guide you through the generation of a new catalog item based on the configurations of the "Docker Environment" catalog item.
-* Among the "Available Components" (lower menu), search for the previously-generated component and click "SELECT". Make sure the component is listed as the **last element** in the "Selected Components" (upper menu), then click "CONTINUE".
+* Among the "Available Components" (lower menu), search for the previously-generated component (e.g. `CLOUD-NES STAC`) and click "SELECT". Make sure the list of the "Selected Components" (upper menu) includes the following elements, in this order:
+  
+  * SRC-OS
+  * SRC-CO
+  * SRC-Nginx
+  * SRC-External plugin
+  * Docker Environment
+  * the previously-generated (e.g. `CLOUD-NES STAC`)
+    
+  then click "CONTINUE".
 * Fill in the required catalog item name / description, then click "CONTINUE".
 * Select the desired CO ownership / contact information, then click "CONTINUE".
 * Select the desired catalog item visibility, then click "CONTINUE".

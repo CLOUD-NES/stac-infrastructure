@@ -14,7 +14,7 @@ The STAC API is based on the [stac-fastapi-pgstac](https://github.com/stac-utils
 * Generate the `.env` configuration file from the given template:
   ```shell
   cp .env.template .env
-  # edit the .env file
+  # optionally edit the .env file
   ```
 
 * Start a test STAC API instance and ingest a test dataset, using the [transaction extension](https://github.com/stac-api-extensions/transaction):

@@ -60,8 +60,8 @@
     "type": "Collection",
     "stac_version": "1.1.0",
     "id": "BM-HRL-2024O",
-    "title": "Aerial Images Orthophoto",
-    "description": "Orthophoto mosaic of RGB Aerial Images of the Netherlands at high resolution (7.5 cm). Data is provided as 1x1 km Cloud-Optimized GeoTIFF (COG) tiles, as a COG mosaic or (virtual) GDAL mosaic (VRT).",
+    "title": "Aerial Images Orthophoto 2024",
+    "description": "Orthophoto mosaic of RGB Aerial Images from 2024 of the Netherlands at high resolution (7.5 cm). Data is provided as 1x1 km Cloud-Optimized GeoTIFF (COG) tiles, as a COG mosaic or (virtual) GDAL mosaic (VRT).",
     "license": "CC-BY-4.0",
     "extent": {
       "spatial": {

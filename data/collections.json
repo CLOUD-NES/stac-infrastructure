@@ -1,0 +1,104 @@
+[
+  {
+    "type": "Collection",
+    "stac_version": "1.1.0",
+    "id": "AHN4-DSM05",
+    "title": "Actueel Hoogtebestand Nederland 4 - Digital Surface Model 0.50 m",
+    "description": "DSM derived from the AHN4 dataset. It is provided as 1x1 km Cloud-Optimized GeoTIFF (COG) tiles, as a COG mosaic, as a (virtual) GDAL mosaic (VRT), and as a (virtual) Zarr store using both kerchunk references and an Icechunk repository.",
+    "license": "CC0-1.0",
+    "extent": {
+      "spatial": {
+        "bbox": [
+          5.080588267840089,
+          52.04691874904797,
+          5.19769789031664,
+          52.11906794895211
+        ]
+      },
+      "temporal": {
+        "interval": [
+          [
+            "2020-01-01T00:00:00Z",
+            "2022-12-31T23:59:59Z"
+          ]
+        ]
+      }
+    },
+    "links": [],
+    "assets": {
+      "data": {
+        "href": "https://objectstore.surf.nl/cloud-nes-benchmarks/ahn/4/DSM05/items-400-LZW.parquet",
+        "type": "application/vnd.apache.parquet"
+      },
+      "cog-mosaic": {
+        "title": "COG mosaic",
+        "href": "https://objectstore.surf.nl/cloud-nes-benchmarks/ahn/4/DSM05/COG-400-LZW-mosaic.TIF",
+        "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+        "roles": ["data"]
+      },
+      "vrt-mosaic": {
+        "title": "GDAL VRT mosaic",
+        "href": "https://objectstore.surf.nl/cloud-nes-benchmarks/ahn/4/DSM05/VRT-400-LZW-mosaic.VRT",
+        "type": "application/xml",
+        "roles": ["data"]
+      },
+      "icechunk": {
+        "title": "Icechunk repository",
+        "href": "https://objectstore.surf.nl/cloud-nes-benchmarks/ahn/4/DSM05/COG-400-LZW-icechunk/",
+        "type": "application/vnd.zarr+icechunk",
+        "roles": ["data"]
+      },
+      "kerchunk": {
+        "title": "Kerchunk references",
+        "href": "https://objectstore.surf.nl/cloud-nes-benchmarks/ahn/4/DSM05/refs-COG-400-LZW.json",
+        "type": "application/json",
+        "roles": ["data"]
+      }
+    }
+  },
+  {
+    "type": "Collection",
+    "stac_version": "1.1.0",
+    "id": "BM-HRL-2024O",
+    "title": "Aerial Images Orthophoto",
+    "description": "Orthophoto mosaic of RGB Aerial Images of the Netherlands at high resolution (7.5 cm). Data is provided as 1x1 km Cloud-Optimized GeoTIFF (COG) tiles, as a COG mosaic or (virtual) GDAL mosaic (VRT).",
+    "license": "CC-BY-4.0",
+    "extent": {
+      "spatial": {
+        "bbox": [
+          5.080588267840089,
+          52.04691874904797,
+          5.19769789031664,
+          52.11906794895211
+        ]
+      },
+      "temporal": {
+        "interval": [
+          [
+            "2024-01-01T00:00:00Z",
+            "2024-12-31T23:59:59Z"
+          ]
+        ]
+      }
+    },
+    "links": [],
+    "assets": {
+      "data": {
+        "href": "https://objectstore.surf.nl/cloud-nes-benchmarks/bm-hrl/2024O/RGB/items-COG-512-LZW.parquet",
+        "type": "application/vnd.apache.parquet"
+      },
+      "cog-mosaic": {
+        "title": "COG mosaic",
+        "href": "https://objectstore.surf.nl/cloud-nes-benchmarks/bm-hrl/2024O/RGB/COG-512-LZW-mosaic.tif",
+        "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+        "roles": ["data"]
+      },
+      "vrt-mosaic": {
+        "title": "GDAL VRT mosaic",
+        "href": "https://objectstore.surf.nl/cloud-nes-benchmarks/bm-hrl/2024O/RGB/COG-512-LZW-mosaic.vrt",
+        "type": "application/xml",
+        "roles": ["data"]
+      }
+    }
+  }
+]

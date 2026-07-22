@@ -1,0 +1,20 @@
+[project]
+name = "stac-infrastructure"
+version = "0.1.0"
+description = "STAC API for CLOUD-NES"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "stac-fastapi-api<=6.2.1",
+    "stac-fastapi-extensions<=6.2.1",
+    "stac-fastapi-geoparquet[serve]>=0.0.6",
+    "stac-fastapi-types<=6.2.1",
+]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src/"]
+include = ["stac_infrastructure"]

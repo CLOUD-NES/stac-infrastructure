@@ -4,26 +4,22 @@
   vars: {}
   tasks:
 
-  - name: Start STAC API and ingest items into the database
+  - name: Start STAC API
     community.docker.docker_compose_v2:
       project_src: .
       services:
       - app
-      - ingest-data
       wait: true
       wait_timeout: 60
-    environment:
-      - POSTGRES_USER: "{{ postgres_user }}"
-      - POSTGRES_PASSWORD: "{{ postgres_password }}"
 
   - name: Create nginx location block
     copy:
-      dest: /etc/nginx/app-location-conf.d/jupyterhub.conf
+      dest: /etc/nginx/app-location-conf.d/stac.conf
       mode: 0644
       content: |
         location /stac/v1 {
             rewrite ^/stac/v1(.*)$ $1 break;
-            proxy_pass http://localhost:8082;
+            proxy_pass http://localhost:8000;
             proxy_set_header HOST $http_host;
             proxy_set_header Referer $http_referer;
             proxy_set_header X-Forwarded-For $remote_addr;
